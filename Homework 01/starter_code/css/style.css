@@ -1,0 +1,36 @@
+body {
+    background-color: #F6F6F6;
+}
+
+header {
+    border-top: 5px solid #222222;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+article {
+    border-bottom: 5px solid #222222;
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+}
+
+p {
+    color: #05080C;
+    font-family:  Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+th {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+td {
+    background-color: #eeeeee;
+}
