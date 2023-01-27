@@ -1,0 +1,38 @@
+
+.wrapper {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+a {
+    color: white;
+}
+.exerciseHeader {
+    display: flex;
+}
+
+.exerciseHeaderNav {
+    display: flex;
+    
+}
+
+.h1HeaderTitle {
+    color: yellow;
+
+}
+
+.exerciseUl {
+    list-style-type:none;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.navBig {
+
+}
+
+.navNormal {
+
+}
