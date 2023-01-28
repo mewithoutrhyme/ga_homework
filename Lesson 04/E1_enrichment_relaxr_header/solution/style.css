@@ -1,38 +1,46 @@
 
 .wrapper {
+    font-family: sans-serif;
+    width: 900px;
+}
+
+.exerciseHeader {
     background-color: black;
     color: white;
     display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-bottom: 5px solid yellow;
+    align-items: center;
 }
+
+.exerciseUl {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* start text styling */
 
 a {
     color: white;
-}
-.exerciseHeader {
-    display: flex;
-}
-
-.exerciseHeaderNav {
-    display: flex;
-    
+    text-decoration: none;
 }
 
 .h1HeaderTitle {
     color: yellow;
-
-}
-
-.exerciseUl {
-    list-style-type:none;
-    display: flex;
-    gap: 10px;
-    
 }
 
 .navBig {
-
+    text-transform: uppercase;
 }
 
 .navNormal {
-
+    font-weight: lighter;
 }
+
+/* end text styling */
+
+
