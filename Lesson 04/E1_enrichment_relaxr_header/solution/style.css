@@ -1,7 +1,9 @@
 
-.wrapper {
+
+/* header and navigation styling */
+
+.headerWrapper {
     font-family: sans-serif;
-    width: 900px;
 }
 
 .exerciseHeader {
@@ -22,13 +24,16 @@
     
 }
 
-/* start text styling */
+/* start text styling for Header and top Nav */
 
-a {
+.exerciseHeaderNav a {
     color: white;
     text-decoration: none;
 }
 
+.exerciseHeaderNav a:hover {
+    color: yellow;
+}
 .h1HeaderTitle {
     color: yellow;
 }
@@ -41,6 +46,6 @@ a {
     font-weight: lighter;
 }
 
-/* end text styling */
+/* end text styling for Header and top Nav */
 
-
+/* END header and navigation styling */

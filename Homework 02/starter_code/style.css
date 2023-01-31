@@ -24,3 +24,53 @@ p {
 
 /* Background Image */
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+/* header and navigation styling */
+
+.headerWrapper {
+  font-family: sans-serif;
+}
+
+.exerciseHeader {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 40px;
+  border-bottom: 5px solid yellow;
+  align-items: center;
+}
+
+.exerciseUl {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+/* start text styling for Header and top Nav */
+
+.exerciseHeaderNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.exerciseHeaderNav a:hover {
+  color: yellow;
+}
+.h1HeaderTitle {
+  color: yellow;
+}
+
+.navBig {
+  text-transform: uppercase;
+}
+
+.navNormal {
+  font-weight: lighter;
+}
+
+/* end text styling for Header and top Nav */
+
+/* END header and navigation styling */
