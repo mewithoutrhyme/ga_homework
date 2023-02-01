@@ -11,6 +11,10 @@ p {
   padding: 15px 0;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
       .oswald { font-family: 'Oswald', sans-serif; }
@@ -36,17 +40,16 @@ p {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 40px;
+  padding: 10px 40px 10px 20px;
   border-bottom: 5px solid yellow;
   align-items: center;
+
 }
 
 .exerciseUl {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  
 }
 
 /* start text styling for Header and top Nav */
@@ -59,18 +62,75 @@ p {
 .exerciseHeaderNav a:hover {
   color: yellow;
 }
+
 .h1HeaderTitle {
   color: yellow;
+  font-family: 'Merriweather', serif;
 }
 
 .navBig {
   text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+ 
 }
 
 .navNormal {
   font-weight: lighter;
+  font-size: 20px;
+
 }
 
 /* end text styling for Header and top Nav */
 
 /* END header and navigation styling */
+
+/* start the gray strip below the nav */
+
+.belowNavtext {
+  background-color: darkgray;
+  padding: 2px 2px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+
+/* end the gray strip below the nav */
+
+/* hero element - background image and right side box */
+
+.hero-element {
+  /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg"); */
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  min-height: 50%;
+}
+
+.hero-div {
+
+
+}
+
+
+
+
+/* footer start */
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+}
+/* footer end */
+
