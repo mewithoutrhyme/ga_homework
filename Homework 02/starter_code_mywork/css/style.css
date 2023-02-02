@@ -11,11 +11,12 @@ p {
   padding: 15px 0;
 }
 
-body {
+html, body {
+  height: 100%;
   font-family: 'Lato', sans-serif;
 }
 
-/* Fonts, classes are so I can reuse the styles on a variety of elements */
+/* Fonts, classes are so I can reuse the styles on a variety of elements (my notes - not really sure how to use the classes below so I just used font-family: ???*/
 .merriweather { font-family: 'Merriweather', serif; }
       .oswald { font-family: 'Oswald', sans-serif; }
         .lato { font-family: 'Lato', sans-serif; }
@@ -29,11 +30,10 @@ body {
 /* Background Image */
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
 
-/* header and navigation styling */
+/* ################ end of stuff that came with the assignment above and start of my work - also, leaving in some of my crazy notes for future reference ################## */
 
-.headerWrapper {
-  font-family: sans-serif;
-}
+
+/* header and navigation styling */
 
 .exerciseHeader {
   background-color: black;
@@ -43,7 +43,6 @@ body {
   padding: 10px 40px 10px 20px;
   border-bottom: 5px solid yellow;
   align-items: center;
-
 }
 
 .exerciseUl {
@@ -52,7 +51,7 @@ body {
   gap: 20px;
 }
 
-/* start text styling for Header and top Nav */
+/* start TEXT styling for Header and top Nav */
 
 .exerciseHeaderNav a {
   color: white;
@@ -72,18 +71,16 @@ body {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
- 
 }
 
 .navNormal {
   font-weight: lighter;
   font-size: 20px;
-
 }
 
-/* end text styling for Header and top Nav */
+/* END text styling for Header and top Nav */
 
-/* END header and navigation styling */
+/* END ALL header and navigation styling */
 
 /* start the gray strip below the nav */
 
@@ -105,25 +102,74 @@ body {
   border-bottom: 3px solid #f2ff00;
 }
 
-/* end the gray strip below the nav */
+/* END the gray strip below the nav */
+
+/* styling the a-buttons */
+
+.heroButton {
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+  border-radius: 5px; 
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.threeButton {
+  background-color: darkgrey;
+  border-bottom: 2px solid darkslategrey;
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* END styling the a-buttons */
 
 /* hero element - background image and right side box */
 
 .heroElement {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat; /* need more practice with this one */
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-size: cover;
   position: relative;
-  min-height: 50%;
+  min-height: 60%;
+  
 }
 
 .heroDiv {
-
-
+background-color: rgb(255, 255, 255,.90);
+width: 380px; /* tried 25% for the h & w, but didn't look right when page size shrank, so checked solution code */
+height: 230px;
+margin: 50px 50px 50px 0;
+padding: 4%;
+box-shadow: 0 0 5px rgba(0,0,0,.75);  /* don't get this one yet, nor how to make the white box somewhat transparent*/
 }
+
+.heroDiv h2 {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+/* END hero element - background image and right side box */
+
+/* start the three boxes at the bottom */
 
 .threeAcross {
 display: flex;
+justify-content: center;
 }
 
 .threeAcross h2 {
@@ -132,14 +178,26 @@ display: flex;
 }
 
 .threeBlocks {
-
+  border-right: 1px solid lightgray;
+  margin: 10px 0;
+  padding: 2%;
 }
 
-/* footer start */
+/* notes to self + teachers: admittedly copied this last snippet from the solution code - I'm still really sure how the .class: thing works, need to keep reading or come to office hours. also need clarity on things like classes calling two things like in the solution code class= "cta main-cta" */
+
+.threeBlocks:last-child {
+  border-right: none;
+}
+
+/* END the three boxes at the bottom */
+
+
+/* footer start  - having trouble figuring out why it doesn't extend to/stay at the bottom of the page  - okay, corrected heroElement to take up more space (60% instead of 50 - and now the whole page takes up more of the browser space */
 .site-footer {
   background-color: black;
   color: white;
   padding: 15px 25px;
 }
-/* footer end */
+
+/* END footer */
 
