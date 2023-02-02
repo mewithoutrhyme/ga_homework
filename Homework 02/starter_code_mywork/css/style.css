@@ -87,13 +87,14 @@ body {
 
 /* start the gray strip below the nav */
 
-.belowNavtext {
+.belowNavtext p {
   background-color: darkgray;
-  padding: 2px 2px;
+  padding: 10px 10px;
   text-align: center;
   font-weight: bold;
   font-style: italic;
   font-family: 'Lato', sans-serif;
+  font-size: 28px;
 }
 
 .strikeout {
@@ -108,23 +109,31 @@ body {
 
 /* hero element - background image and right side box */
 
-.hero-element {
-  /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg"); */
+.heroElement {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
-  /* background-repeat: no-repeat; */
+  display: flex;
   background-size: cover;
   position: relative;
-  display: flex;
   min-height: 50%;
 }
 
-.hero-div {
+.heroDiv {
 
 
 }
 
+.threeAcross {
+display: flex;
+}
 
+.threeAcross h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
 
+.threeBlocks {
+
+}
 
 /* footer start */
 .site-footer {
