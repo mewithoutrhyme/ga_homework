@@ -1,0 +1,203 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Fonts, classes are so I can reuse the styles on a variety of elements (my notes - not really sure how to use the classes below so I just used font-family: ???*/
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+/* Colors */
+/* Dark yellow: #f2ff00 */
+/* Lighter yellow: #ffd900 */
+/* Light gray: #adadad */
+/* Medium gray: #878787 */
+
+/* Background Image */
+/* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+/* ################ end of stuff that came with the assignment above and start of my work ################## */
+/* ################ also, I left some random notes below of things I need to work on more or just don't quite get yet, hope that's okay ################## */
+
+/* header and navigation styling */
+
+.exerciseHeader {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 20px;
+  border-bottom: 5px solid yellow;
+  align-items: center;
+}
+
+.exerciseUl {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* start TEXT styling for Header and top Nav */
+
+.exerciseHeaderNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.exerciseHeaderNav a:hover {
+  color: yellow;
+}
+
+.h1HeaderTitle {
+  color: yellow;
+  font-family: 'Merriweather', serif;
+}
+
+.navBig {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.navNormal {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+/* END text styling for Header and top Nav */
+
+/* END ALL header and navigation styling */
+
+/* start the gray strip below the nav */
+
+.belowNavtext p {
+  background-color: darkgray;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+
+/* END the gray strip below the nav */
+
+/* styling the a-buttons */
+
+.heroButton {
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+  border-radius: 5px; 
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.threeButton {
+  background-color: darkgrey;
+  border-bottom: 2px solid darkslategrey;
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* END styling the a-buttons */
+
+/* hero element - background image and right side box */
+
+.heroElement {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat; /* need more practice with this one */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  min-height: 60%;
+  
+}
+
+.heroDiv {
+background-color: rgb(255, 255, 255,.90);
+width: 380px; /* tried 25% for the h & w, but didn't look right when page size shrank, so checked solution code */
+height: 230px;
+margin: 50px 50px 50px 0;
+padding: 4%;
+box-shadow: 0 0 5px rgba(0,0,0,.75);  
+}
+
+.heroDiv h2 {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+/* END hero element - background image and right side box */
+
+/* start the three boxes at the bottom */
+
+.threeAcross {
+display: flex;
+justify-content: center;
+}
+
+.threeAcross h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+.threeBlocks {
+  border-right: 1px solid lightgray;
+  margin: 10px 0;
+  padding: 2%;
+}
+
+/* notes to self + teachers: admittedly copied this last snippet from the solution code - I'm still really sure how the colon in the .class:  works, need to keep reading or come to office hours. also need clarity on things like classes calling two things like in the solution code class= "cta main-cta" */
+
+.threeBlocks:last-child {
+  border-right: none;
+}
+
+/* END the three boxes at the bottom */
+
+
+/* footer start */
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+}
+
+/* END footer */
+
