@@ -5,35 +5,56 @@ Dark Text: #3b4144 / RGBA (59,65,68,1) */
 
 html, body {
     height: 100%;
+    width: 100%;
     font-family: 'Lato', sans-serif;
   }
+
+/* START top nav styling */
 
   .header_nav {
     display: flex;
     justify-content: space-between;
     background-color: #20c063;
-    color: white; 
+    padding: 10px;
+    max-height: 40px;
   }
 
-  .header_nav a {
+  .header_nav a, a:visited {
     text-decoration: none;
     color: white;
   }
 
-  .header_nav ul li {
+  .header_nav ul, li {
     list-style-type:none;
-    padding:0;
+    padding:2px 5px 0 5px;
     display:inline-block;
+    vertical-align: top;
     margin: 0;
   }
 
   .nav_left .nav_right {
-    align-items: center;
     display: flex;
     justify-content: flex-start;
+    
   }
-
   .logo {
     height: 25px;
     width: 78px;
+    padding:2px 5px 0 5px;
   }
+
+.circle_link {
+  border: 2px solid white;
+  border-radius: 22px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  height: 20px;
+  width: 22px;
+  padding-top: 2px;
+  margin-right: 3px;
+}
+
+  /* END top nav styling */
+
+  
