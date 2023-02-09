@@ -9,7 +9,7 @@ html, body {
     font-family: 'Lato', sans-serif;
   }
 
-/* START top nav styling */
+/* START top nav styling m */ 
 
 .header_nav {
   display: flex;
@@ -47,7 +47,7 @@ html, body {
 .nav_left, .nav_right {
   display: flex;
   justify-content: flex-start;
-  /* align-items: center;  */
+  align-items: center;  
 }
 
 .logo {
