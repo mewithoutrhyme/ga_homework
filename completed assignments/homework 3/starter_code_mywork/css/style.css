@@ -14,7 +14,8 @@ display: flex;
 justify-content: space-between;
 background-color: #20c063;
 padding: 5px 5px 10px 5px;
-height: 30px; 
+/* height: 30px;  */
+height: 10%;
 }
 
 .header_nav a {
@@ -314,9 +315,9 @@ a.results_item {
 
 
 .site_footer {
-  margin-top: 30px;;
+  margin-top: 30px;
   background-color: #3b4144;
-  height: 90px;
+  height: 10%;
   padding-bottom: 10px;
 }
  
