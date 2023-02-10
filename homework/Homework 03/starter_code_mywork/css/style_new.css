@@ -47,7 +47,6 @@ font-size: 14px;
 .nav_left, .nav_right {
 display: flex;
 justify-content: flex-start;
-/* align-items: center;  */
 }
 
 .logo {
@@ -126,10 +125,6 @@ padding: 0px 0px 0px 10px;
 margin: 0 0 5px 0;
 list-style-type: none;
 }
-
-/* .icon_area {
-  align-items: center;
-} */
 
 .icon_area li {
   padding-left: 0;
@@ -233,11 +228,35 @@ background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house
 .results_nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  min-height: 150px;
+}
+
+.results_pages {
+  display: flex;
+  gap: 5px; 
+  margin: 5px 0 0 0;
+  padding: 0px;
+}
+
+a.results_item {
+  color: #20c063;
+  text-decoration: none;
 }
 
 .results_breadcrumb {
   display: flex;
-  
+  gap: 5px; 
+  margin: 5px;
+  padding: 0px;
+}
+
+.results_amount {
+  color:rgb(107, 105, 105);
+  margin: 5px;
+  padding: 0px;
 }
 
 /* END main grid and START result insights section  */
@@ -291,10 +310,6 @@ background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house
   color: white;
   font-size: 15px;
   } 
-
-  /* .footer_nav li {
-  padding-right: 10px;
-  }   */
 
 .copyright {
   font-size: 10px;
