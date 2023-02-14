@@ -43,7 +43,7 @@ newParagraph.innerText = "hi im just a child"
 document.body.appendChild(newParagraph); // adds a child HTML element to the body of the page - adds it to the end of the body
 const greatDiv = document.createElement('div') // creates a div 
 greatDiv.style.border = "2px solid gold";
-greatDiv.innerHTML = '<p>something great goes here</p>'; // sets the inner content of the div
+greatDiv.innerHTML = '<p>something great goes here!</p>'; // sets the inner content of the div
 document.body.appendChild(greatDiv); // adds the div to the end of the body of the page
 const greatChild = document.createElement("p"); // creates a p tag
 greatChild.id = "child-element";
