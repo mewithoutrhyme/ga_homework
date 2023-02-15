@@ -145,4 +145,14 @@ header {
 
 }
 
+.livid {
+    background: red;
+    transition: background-color 2s;
+}
+
+p {
+    padding-top: 30px;
+    font-size: 14px;
+}
+
 
