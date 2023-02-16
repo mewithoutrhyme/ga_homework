@@ -9,4 +9,10 @@ For level 1, implement a single event listener to the `.js-ball` element. When t
 Level 2 has 3 moving balls that the user can click on to increment their score. Implement a single click handler to listen for when a user clicks on one of the balls and increment their score until they reach 100.
 
 ## Level 3 - Bonus Level
-Level 3 also has 3 moving balls but of different sizes! Each ball is therefore worth a different amount of points. The number of points the user should get for each ball is saved in side of a data attribute on the ball HTML elements. You can access the data attribute of an element from the event object by looking at the event target's `dataset` property. When the user clicks on a ball, increment their score based on how many points that ball is worth until they reach 100.
+Level 3 also has 3 moving balls but of different sizes! Each ball is therefore worth a different amount of points. 
+
+The number of points the user should get for each ball is saved in side of a data attribute on the ball HTML elements. 
+
+You can access the data attribute of an element from the event object by looking at the event target's `dataset` property. 
+
+When the user clicks on a ball, increment their score based on how many points that ball is worth until they reach 100.
