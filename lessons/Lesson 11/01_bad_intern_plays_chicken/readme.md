@@ -29,8 +29,11 @@ x The upsells are all the same product. It should go: Cochin, Augsburger, Rhode 
 * Product Image is broken
 * The page's download weight is almost 6mb and that is with images repeated and broken. This is too big for our customers.
 * When a user tries to order, it doesn't limit them to valid order quantities
+
 * When the customer clicks the order submit button there is no indication that the order went through
+
 * The order quantity doesn't reset after an order has been submitted
+
 * Neither of the accordions are opening and closing
 
 
