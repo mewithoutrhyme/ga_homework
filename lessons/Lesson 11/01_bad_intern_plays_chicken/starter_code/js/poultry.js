@@ -20,19 +20,18 @@ function validateOrderQty(e){
 
 
 
-
 document.addEventListener('DOMContentLoaded', function(event) {
 
 document.querySelector('#pbeOrderSubmit').addEventListener('click',validateOrderQty);
 
-document.querySelector('#pbeDescCharacteristics header a').addEventListener('click',function(e){
+document.querySelector('#pbeDescCharacteristics header').addEventListener('click',function(e){
     e.preventDefault();
     document.getElementById('pbeDescCharacteristics').classList.toggle('pbeDescAccordionCollapsed');
 });
 
-document.querySelector('#pbeDescHistory header a').addEventListener('click',function(e){
+document.querySelector('#pbeDescHistory header').addEventListener('click',function(e){
     e.preventDefault();
-    document.getElementByClass('pbeDescHistory').classList.toggle('pbeDescAccordionCollapsed');
+    document.getElementById('pbeDescHistory').classList.toggle('pbeDescAccordionCollapsed');
 });
 
 });

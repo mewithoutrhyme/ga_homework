@@ -22,7 +22,6 @@ function validateOrderQty(e){
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
-
 document.querySelector('#pbeOrderSubmit').addEventListener('click',validateOrderQty);
 
 document.querySelector('#pbeDescCharacteristics header').addEventListener('click',function(e){
