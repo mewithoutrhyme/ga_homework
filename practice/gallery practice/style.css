@@ -22,6 +22,7 @@
 .galleryImg {
     max-height: 100%;
     min-width: 100%;
+    /* max-width: 100%; still confused about the heights width thing - need to work through it more*/
     object-fit: cover;
     vertical-align: bottom;
 }
