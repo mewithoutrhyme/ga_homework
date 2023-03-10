@@ -40,7 +40,7 @@ function validateNewUserForm(e){
 
         
     // Validate Names
-    
+    let fname
 
      // If no error messages show submit message
      let outputMessage = "";

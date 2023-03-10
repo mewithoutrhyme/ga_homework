@@ -1,9 +1,36 @@
 /* Featured and Expanded Item */
 
-.trulia-grid-item {
-
-}
+/* .trulia-grid-item {
+    cursor:pointer;
+    transition: 0.15s ease-in-out;
+} */
 
 .trulia-featured-grid-item {
-
+    grid-column: span 2;
+    grid-row: span 2;
+    height:100%;
+    min-height:400px;
 }
+
+.trulia-featured-grid-item .trulia-house-image {
+    height:80%;
+}
+
+/* 
+.trulia-grid-item {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+  } */
+/*   
+  .trulia-house-image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  } */

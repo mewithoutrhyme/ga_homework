@@ -159,8 +159,19 @@ a {
 .trulia-nav-toggle {
   display:none;
 }
+/* adding in the mobile nav */
 
+@media (max-width:1024px) {
+  .trulia-nav-toggle {
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
 
+  .trulia-nav-mobilehide {
+    display: none;
+  }
+}
 
 /**
  * CSS CIRCLE - rough how to
