@@ -166,11 +166,52 @@ a {
     display: block;
     color: white;
     font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
   }
 
   .trulia-nav-mobilehide {
-    display: none;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    width: 0;
   }
+
+  .trulia-nav {
+    height: auto;
+    display: block;
+   
+  }
+
+  .trulia-nav ul li {
+    display: block;
+    margin: 0;
+  }
+
+  .trulia-nav-left ul li,
+  .trulia-nav-right ul li {
+    display: block;
+    }
+
+  .trulia-nav-left, .trulia-nav-right {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .trulia-nav-left ul,
+  .trulia-nav-right ul {
+    width:100%;
+    display: block;
+    margin:0;
+  }
+
+  .trulia-nav-left li,
+  .trulia-nav-right li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    }
 }
 
 /**
@@ -575,6 +616,45 @@ a {
 .clearfix:after {
   clear: both;
 }
+
+   /* The Grid: Responsive Issues
+   * The grid of properties looks odd at both very large and small sizes.
+   * At sizes above 1600px, make it 6 across
+   * At sizes above 1200px, make it 4 across
+   * At less than 768px, make it 2 across */
+
+   @media (min-width:1600px) {
+    .trulia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+      background-color: #e3e4e6;
+      padding: 15px;
+    
+    }
+   }
+
+   @media (min-width:1200px) {
+    .trulia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+      background-color: #e3e4e6;
+      padding: 15px;
+    
+    }
+   }
+
+   @media (max-width:768px) {
+    .trulia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      background-color: #e3e4e6;
+      padding: 15px;
+    
+    }
+   }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
