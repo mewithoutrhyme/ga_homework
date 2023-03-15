@@ -1,0 +1,148 @@
+/* cook creek main css */
+
+* {
+    font-family: 'M PLUS 1p', sans-serif;
+    margin: 0;
+    /* font-family: 'Quicksand', sans-serif; */
+   
+}
+
+.container {
+    padding: 10px;
+   
+}
+
+/* header nav styling */
+
+.logo-container {
+    margin: 0;
+}
+
+.logo {
+    height: 75px;
+}
+
+.header {
+    /* background-color: rgb(238, 238, 231);   */
+    font-weight: 400;   
+}
+
+.nav-container {
+    padding: 10px 20px 0 10px;
+}
+
+.nav-container, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-main, ul {
+    list-style: none;
+}
+
+.nav-main, a, a:visited {
+    text-decoration: none;
+    color: #6a4700;
+    transition: .5s ease-in-out;
+}
+
+.nav-main, a:hover {
+    color: #0c0c0c;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 35px;
+}
+
+/* body styles */
+
+.hero {
+    align-items: center;
+    background-image: url('../images/ineedahero.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 560px;  
+}
+
+.body-style {
+    background-color: antiquewhite;
+    min-height: 800px;
+}
+
+.quote {
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    color: black;
+  }
+  
+.quote-box {
+    padding: 40px;
+    width: 300px;
+    background-color: antiquewhite;
+    opacity: 0.5;
+    margin-right: 50px;;
+  }
+
+
+
+  /* .hero-img  { background-image: url('../images/ineedahero.jpeg'); opacity: 0.6; } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    
+/* toggle and nav styling */
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-hide {
+        display: none;
+    }
+
+    .nav-nav, li {
+        margin-bottom: 5px;
+    }
+
+    .nav-main {
+        margin-top: 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-main ul {
+        display: block;
+    }
+ 
+    .nav-container-right {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       margin-bottom: 20px;
+     
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+  
+}
