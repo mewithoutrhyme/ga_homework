@@ -10,6 +10,16 @@ form {
 }
 
 #giphy-results {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   /* CSS Bonus: Use flex or grid properties to display the results in a responsive, clean layout */
+}
+
+#giphy-results, img {
+  height: 200px;
+}
+
+.container {
+  margin-left: 10px;
 }
