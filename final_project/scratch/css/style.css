@@ -77,8 +77,8 @@
         background-size: cover;
         display: flex;
         justify-content: flex-end;
-        height: 700px;  
         grid-column:span 2;
+        height: 100vh;  /* let's try full viewport height for now */
     }
 
     .quote {
