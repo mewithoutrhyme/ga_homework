@@ -100,7 +100,8 @@
 
     .image-slider {
         grid-column: span 2;
-        height: 300px;
+        /* height: 300px; */
+        height: 100vh;  /* let's try full viewport height for now */
         background-color: azure;
         width: 100%;
         
@@ -254,8 +255,16 @@
             gap: 20px;
         }
 
-        .grid-it {
+        .grid-it-index {
             display: block;
         }
-    
+
+        .grid-it-discover {
+            display: block;
+        }
+        
+        .grid-it-photos
+        {
+            display: block;
+        }
     }
