@@ -429,7 +429,21 @@
 
         .our-home {
             max-width: 500px;
+        } 
+        
+        .flickity-page-dots {
+            display: none;
+            /* padding: 0; */
         }
+
+        .image-slider {
+            grid-column: span 2;
+            height: 400px;  
+            overflow: hidden;
+            box-sizing: border-box;
+}
+
+
     }
    
     @media screen and (max-width: 640px) {
@@ -516,6 +530,10 @@
             .carousel-cell img {
                 height: 300px;
               }
+
+            .flickity-page-dots {
+                display: none;
+            }
     
             .our-home {
                 max-width: 350px;

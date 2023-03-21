@@ -49,6 +49,8 @@ const appearOnScroll = new IntersectionObserver(function(
   // flickity slide show
   // https://flickity.metafizzy.co/#initialize-with-vanilla-javascript
  
+
+
   var elem = document.querySelector('.main-carousel');
 
   var flkty = new Flickity( elem, {
@@ -60,6 +62,15 @@ const appearOnScroll = new IntersectionObserver(function(
     initialIndex: 2,
   });
 
+  // $('main-carousel').flickity({
+  //   arrowShape: { 
+  //     x0: 5,
+  //     x1: 60, y1: 25,
+  //     x2: 60, y2: 10,
+  //     x3: 35
+  //   }
+  // });
+ 
   // paralax version of flickity, 
   // but can't quite figure out why the wrap is not working the same, 
   // so it will have to wait
