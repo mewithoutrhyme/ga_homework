@@ -46,60 +46,26 @@ const appearOnScroll = new IntersectionObserver(function(
     appearOnScroll.observe(slider);
   });
 
-  // flickity slide show
-  // https://flickity.metafizzy.co/#initialize-with-vanilla-javascript
  
+// let's make the image gallery have a featured image - users choice
 
+// TO-DO - make it so that each gallery functions seperatly  - can I loop this somehow or do I have to create a different loop for each gallery?
 
-  var elem = document.querySelector('.main-carousel');
+// let gallery = document.querySelectorAll(".img-gallery");
 
-  var flkty = new Flickity( elem, {
-    // options
-    contain: true,
-    freeScroll: true,
-    wrapAround: true,
-    autoPlay: true,
-    initialIndex: 2,
-  });
+      let thumbs = document.querySelectorAll(".thumbs-image-row > a");
 
-  // $('main-carousel').flickity({
-  //   arrowShape: { 
-  //     x0: 5,
-  //     x1: 60, y1: 25,
-  //     x2: 60, y2: 10,
-  //     x3: 35
-  //   }
-  // });
- 
-  // paralax version of flickity, 
-  // but can't quite figure out why the wrap is not working the same, 
-  // so it will have to wait
+        for (let i=0;i<thumbs.length;i++){
 
-// var carousel = document.querySelector('.main-carousel');
-// var flkty = new Flickity( carousel, {
-//   imagesLoaded: true,
-//   // percentPosition: false,
+          thumbs[i].addEventListener("click",function(e){
+              e.preventDefault();
 
-//   initialIndex: 2,
-//   contain: true,
-//   freeScroll: true,
-//   wrapAround: true,
-//   autoPlay: true,
+      document.querySelector(".large-img-description .featured").setAttribute("src",this.getAttribute("href")); 
+              
+      document.querySelector(".large-img-description .featured").setAttribute("alt",this.querySelector("img").getAttribute("alt"));
+          });
+      }
   
-// });
+// can we update the year for copyright? 
 
-// var imgs = carousel.querySelectorAll('.carousel-cell img');
-// // get transform property
-// var docStyle = document.documentElement.style;
-// var transformProp = typeof docStyle.transform == 'string' ?
-//   'transform' : 'WebkitTransform';
-
-// flkty.on( 'scroll', function() {
-//   flkty.slides.forEach( function( slide, i ) {
-//     var img = imgs[i];
-//     var x = ( slide.target + flkty.x ) * -1/3;
-//     img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-//   });
-// });
-  
-  
+      document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
